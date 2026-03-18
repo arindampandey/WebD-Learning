@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        /* @media not/only mediatype and (expressions){
+            CSS-Code;
+        } */
+        @media only screen and (max-width : 455px) {
+            body {
+                background-color: blue;
+            }
+
+            .boxes {
+                flex-direction: column;
+            }
+        }
+
+        body {
+            background-color: red;
+        }
+
+        .boxes {
+            display: flex;
+        }
+
+        .box {
+            height: 45px;
+            width: 34px;
+            margin: 3px;
+            padding: 5px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        I am a good boy....
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
