@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .outline {
+            border: 2px solid black;
+            border-radius: 4%;
+            height: 50vw;
+            width: 50vh;
+            position: relative;
+            left: 400px;
+            box-shadow: 2px 2px 2px gray;
+            background-color: rgb(201, 235, 252);
+        }
+
+        .image {
+            border: 1px solid white;
+            border-radius: 4%;
+            height: 25vw;
+            width: 48vh;
+            position: absolute;
+            left: 5px;
+            top: 5px;
+
+        }
+
+        .capsule {
+            padding: 4px;
+        }
+
+        span {
+            position: relative;
+            top: 310px;
+            left: 15px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-left: 10px;
+            padding: 4px;
+            font-size: 12px;
+        }
+
+        .heading {
+            position: relative;
+            top: 320px;
+            left: 10px;
+            /* font-style: bold; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        p {
+            position: relative;
+            top: 340px;
+            left: 10px;
+        }
+
+        .rm {
+            position: relative;
+            top: 370px;
+            left: 18vh;
+            color: rgb(0, 136, 195);
+            border: 0px solid rgb(133, 204, 255);
+            border-radius: 15px;
+            background-color: rgb(133, 204, 255);
+            width: 80px;
+            height: 30px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .rm:hover {
+            background-color: rgb(170, 217, 250);
+            color: rgb(235, 244, 251);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outline">
+        <div>
+            <img class="image"
+                src="https://imgs.search.brave.com/fHl7KH6WHkG2U8MbaVeSTKnkgjFec660Wl6Cf5nQGVk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTU1/NDcyNzg3L3Bob3Rv/L29uLXRoZS1yb2Fk/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz00Y0l2THhkUWox/Y3hENThOd2VpWXMz/VGJDSjhoYV9GWkgt/U2U5TkxFY1k4PQ"
+                alt="">
+        </div>
+
+        <div class="capsule">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+
+        <div class="heading">
+            <h2>Sam Jamson</h2>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A dignissimos atque aliquam debitis perferendis id
+            ex, deserunt modi nisi reiciendis. Ad, alias ducimus non asperiores deleniti nostrum voluptate qui cum,
+            quia, numquam impedit minima.</p>
+
+        <div class="rm">
+            <h6 style="position: relative; top: 8px;">Read More</h6>
+        </div>
+    </div>
+
+</body>
+
+</html>

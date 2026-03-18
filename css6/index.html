@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity and Casecade</title>
+    <style>
+        h1 {
+            color: burlywood;
+        }
+
+        .cyellow {
+            color: yellow;
+        }
+
+        .cred {
+            color: red !important; 
+        }
+        /* Using !important , inline selectors can be override */
+
+        .cpurple {
+            color: purple;
+        }
+
+        /* Attribute Selector Example */
+        [data-x="a"] {
+            background-color: aqua;
+            color: yellowgreen;
+        }
+
+        /* It has more specificity */
+        h1.cyellow{
+            color: yellow; 
+        }
+    </style>
+    <!-- Specificity -->
+    <!-- Inline Selector -> ID Selector -> Class or Attribute Selector -> Element Selector -> Universal Selector  -->
+    <!-- If specificity is same so the position is checked .....the last position is applied  -->
+</head>
+
+<body>
+    <div>
+        <h1 style="color: red;" class="cyellow cred cpurple" data-x="a">Hello</h1>
+    </div>
+</body>
+
+</html>

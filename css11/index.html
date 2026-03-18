@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Property</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 10vw;
+            height: 10vh;
+            /* overflow: scroll; */
+            overflow: auto;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            /* The above two lines can also be written as - overflow: hidden scroll; */
+            
+            /* white-space: nowrap;
+            text-overflow: ellipsis; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a good boy and the Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat praesentium officiis nemo, architecto impedit culpa. Beatae soluta optio, ipsam ullam quas illum quos quidem hic consequuntur pariatur tempora odio cupiditate modi facilis ipsa excepturi velit blanditiis, saepe veniam voluptate impedit. Minima quos quidem assumenda maiores?
+    </div>
+</body>
+</html>
